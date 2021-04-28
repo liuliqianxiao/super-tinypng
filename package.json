@@ -4,23 +4,23 @@
   "description": "Tinypng without \"Too many files uploaded at once\" limit",
   "main": "index.js",
   "bin": {
-    "super-tinypng": "./index.js"
+    "super-tinypng": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhanyuzhang/super-tinypng.git"
+    "url": "git+https://github.com/liuliqianxiao/super-tinypng.git"
   },
   "keywords": [
     "tinypng",
     "compress"
   ],
-  "author": "chesszhang",
+  "author": "liuliqianxiao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhanyuzhang/super-tinypng/issues"
+    "url": "https://github.com/liuliqianxiao/super-tinypng/issues"
   },
-  "homepage": "https://github.com/zhanyuzhang/super-tinypng#readme"
+  "homepage": "https://github.com/liuliqianxiao/super-tinypng#readme"
 }
