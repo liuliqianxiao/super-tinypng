@@ -12,11 +12,11 @@ var destResourceRoot = ""
 let argLength = process.argv.length;
 if (argLength === 2) {
     // originalResourceRoot = path.resolve("./test");
-    originalResourceRoot = path.resolve("E:\\Laya\\jzxj\\client\\laya\\assets");
-    destResourceRoot = path.resolve("./output");
+    originalResourceRoot = path.resolve("C:\\Users\\05\\Desktop\\test");
+    destResourceRoot = path.join(originalResourceRoot, "output");
 } else if (argLength === 3) {
     originalResourceRoot = path.resolve(process.argv[2]);
-    destResourceRoot = path.resolve("./output");
+    destResourceRoot = path.join(originalResourceRoot, "output");
     console.warn("未设置资源输出目录，默认为" + destResourceRoot)
 } else {
     originalResourceRoot = path.resolve(process.argv[2]);
@@ -172,7 +172,7 @@ function compressAllComplete() {
         startUpload();
     } else {
         console.log(`===========================所有资源压缩完成,失败${failCompressFiles.length}个==================================`);
-        failCompressFiles.forEach((imagePath)=>{
+        failCompressFiles.forEach((imagePath) => {
             console.log(`XXXXXXXXXXXXXXXXXXXXXXXXX    ${imagePath}    XXXXXXXXXXXXXXXXXXXXXXXXX`);
         });
     }
